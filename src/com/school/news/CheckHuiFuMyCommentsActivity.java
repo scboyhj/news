@@ -31,6 +31,7 @@ import com.school.news.vo.MyComment;
 
 public class CheckHuiFuMyCommentsActivity extends Activity implements
 		MyCommentsAdapter.IShanChu {
+	int aa = 0,bb=1;
 	MyListView listView;
 	ProgressDialog dialog;
 	HashMap<String, String> params;
