@@ -31,7 +31,7 @@ import com.school.news.vo.MyComment;
 
 public class CheckHuiFuMyCommentsActivity extends Activity implements
 		MyCommentsAdapter.IShanChu {
-	int aa = 0,bb=1;
+	int i=0;
 	MyListView listView;
 	ProgressDialog dialog;
 	HashMap<String, String> params;
@@ -42,7 +42,7 @@ public class CheckHuiFuMyCommentsActivity extends Activity implements
 	private List<MyComment> commentsList;
 	private List<MyComment> commentsListtemp;
 	private LinearLayout pLayout;
-
+  
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
