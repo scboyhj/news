@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteandroid"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="#00738e" >
+
+        <LinearLayout
+            android:id="@+id/backButton"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:onClick="myAction"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="11dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/jiantou3" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于我们" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/small_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="    我们“奔跑团队”来自重庆邮电大学，由张学旺老师带队，队长由杜鑫鑫同学担任。本次简易新闻发布平台，开发手机端主要由黄俊同学（2012级）负责，后台和服务器主要由范孟灵同学（2012级）和杜鑫鑫同学（2011级）负责。" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/small_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="    我们“奔跑团队”来自重庆邮电大学，由张学旺老师带队，队长由杜鑫鑫同学担任。本次简易新闻发布平台，开发手机端主要由黄俊同学（2012级）负责，后台和服务器主要由范孟灵同学（2012级）和杜鑫鑫同学（2011级）负责。" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="right" >
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"
+            android:background="@drawable/cy" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

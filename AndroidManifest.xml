@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.school.news"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+    <!-- 访问sdCard -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 写sdCard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读文件 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 写文件 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.school.news.app.MyApplication"
+        android:icon="@drawable/about_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.school.news.MyAboutActivity" >
+        </activity>
+        <activity android:name="com.school.news.MyOtherNewsContentActivity2" >
+        </activity>
+        <activity android:name="com.school.news.MyOtherNewsContentActivity3" >
+        </activity>
+        <activity android:name="com.school.news.MyOtherNewsContentActivity1" >
+        </activity>
+        <activity android:name="com.school.news.MyNewsGongGaoActivity" >
+        </activity>
+        <activity android:name="com.school.news.TabGongGaoTopActivity" >
+        </activity>
+        <activity android:name="com.school.news.CheckShouCangNewsActivity" >
+        </activity>
+        <activity android:name="com.school.news.CheckHuiFuMyCommentsActivity" >
+        </activity>
+        <activity android:name="com.school.news.CheckMyCommentsActivity" >
+        </activity>
+        <activity android:name="com.school.news.MyUserCenterActivity" >
+        </activity>
+        <activity android:name="com.school.news.MyLoginActivity" >
+        </activity>
+        <activity
+            android:name="com.school.news.MyCommentsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity android:name="com.school.news.MyNewLoginActivity" >
+        </activity>
+        <activity android:name="com.school.news.MyZhuCeActivity" >
+        </activity>
+        <activity android:name="MainActivity" >
+        </activity>
+        <activity android:name="TabNewsActivity" >
+        </activity>
+        <activity android:name="TabTopicActivity" >
+        </activity>
+        <activity android:name="TabPicActivity" >
+        </activity>
+        <activity android:name="TabFollowActivity" >
+        </activity>
+        <activity android:name="TabVoteActivity" >
+        </activity>
+        <activity android:name="TabNewsTopActivity" >
+        </activity>
+        <activity android:name="TabNewsSportActivity" >
+        </activity>
+        <activity android:name="TabNewsPlayActivity" >
+        </activity>
+        <activity android:name="TabNewsFinanceActivity" >
+        </activity>
+        <activity android:name="TabNewsScienceActivity" >
+        </activity>
+        <activity android:name="com.school.news.TabNewsMoreActivity" >
+        </activity>
+        <activity android:name="NewsContentActivity" >
+        </activity>
+        <activity android:name="com.school.news.NewsMoreContentActivity" >
+        </activity>
+        <activity android:name="com.school.news.LoginActivity" >
+        </activity>
+        <activity android:name="com.school.news.WebIpActivity" >
+        </activity>
+        <activity android:name="com.school.news.UserPageActivity" >
+        </activity>
+        <activity android:name="com.school.news.MyNewsContentActivity" >
+        </activity>
+        <activity android:name="com.school.news.TabNewsSchoolActivity" >
+        </activity>
+        <activity android:name="com.school.news.RegisterActivity" >
+        </activity>
+    </application>
+
+</manifest>

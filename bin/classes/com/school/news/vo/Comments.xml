@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="comments">
+    <typeAlias alias="comments" type="com.huaao.news.bean.Comments"/>
+    <resultMap id="commentsResult" class="comments">
+    		<result property="commentsId" column="COMMENTS_ID" jdbcType="Integer"/>
+    		<result property="commentsContent" column="COMMENTS_CONTENT" jdbcType="varchar2"/>
+    		<result property="commentsData" column="COMMENTS_DATA" jdbcType="varchar2"/>
+    		<result property="r" column="R" jdbcType="Integer"/>
+    		<result property="commentsData" column="USER_NAME" jdbcType="varchar2"/>
+    		<result property="commentsUserId" column="COMMENTS_USER_ID" jdbcType="varchar2"/>
+    		<result property="userAddress" column="USER_ADDRESS" jdbcType="varchar2"/>
+    		<result property="userPhoto" column="USER_PHOTO" jdbcType="varchar2"/>
+    </resultMap>
+    <select id="select" resultMap="commentsResult" parameterClass="news">
+    	SELECT * FROM (SELECT ROWNUM R,COMMENTS.* FROM (SELECT COMMENTS_ID,COMMENTS_CONTENT,COMMENTS_DATA,COMMENTS_USER_ID,
+    	USER_NAME,USER_ADDRESS,USER_PHOTO 
+      FROM COMMENTS INNER JOIN USERS ON USER_ID = COMMENTS_USER_ID WHERE 
+      COMMENTS_NEWS_ID = #COMMENTS_NEWS_ID# AND COMMENTS_FLAG = 1 ORDER BY COMMENTS_DATA DESC) COMMENTS) WHERE 
+      <![CDATA[R < #endIndex#]]> AND <![CDATA[R >= #startIndex#]]>
+   </select>
+   
+</sqlMap>

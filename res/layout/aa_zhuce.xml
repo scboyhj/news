@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="#00738e" >
+
+        <LinearLayout
+            android:id="@+id/backButton"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:onClick="myAction"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="11dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/jiantou3" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户注册" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab4"
+        android:layout_width="fill_parent"
+        android:layout_height="170dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/geren_login"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/txtView_phoneNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:layout_marginLeft="1dip"
+            android:background="@android:drawable/editbox_background_normal"
+            android:digits="1234567890abcdefghijklmnopqrstuvwxyz"
+            android:ellipsize="end"
+            android:hint="请输入注册名"
+          
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/txtView_phonePwd"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:layout_marginLeft="1dip"
+            android:background="@android:drawable/editbox_background_normal"
+            android:digits="1234567890abcdefghijklmnopqrstuvwxyz"
+            android:ellipsize="end"
+            android:hint="请输入你的密码"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/txtView_phonePwd2"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:layout_marginLeft="1dip"
+            android:background="@android:drawable/editbox_background_normal"
+            android:digits="1234567890abcdefghijklmnopqrstuvwxyz"
+            android:ellipsize="end"
+            android:hint="请再输入一次密码"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <!-- 注册    重置 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53dip"
+        android:layout_marginTop="25dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/register_Btn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="1dip"
+            android:layout_weight="1"
+            android:background="@color/aa_bj"
+            android:onClick="myAction"
+            android:text="注 册"
+            android:textColor="#FFFFFF"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/toplineImageView"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1.95" />
+
+        <Button
+            android:id="@+id/clear_Btn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="7dip"
+            android:layout_marginTop="1dip"
+            android:layout_weight="1"
+            android:background="@color/aa_bj"
+            android:onClick="myAction"
+            android:text="重 置"
+            android:textColor="#FFFFFF"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+</LinearLayout>

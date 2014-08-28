@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+        <TextView android:id="@+id/tv_news_detials_title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/black"
+	        android:textSize="20dp"
+	        android:layout_marginTop="10dp"/>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_news_detail_source"/>
+            <TextView android:id="@+id/tv_news_detail_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_news_detais_pic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/base_list_default_icon" />
+
+        <TextView android:id="@+id/tv_news_details_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/biz_topic_vote_item_selected"
+            android:text="@string/tv_topic"/>
+        <ListView android:id="@+id/lv_news_details_comments"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            
+        </ListView>
+
+    
+
+</LinearLayout>

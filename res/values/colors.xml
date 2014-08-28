@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="aa_bj">#458994</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="gold">#b89766</color>
+    <color name="bg">#C3C3C3</color>
+    <color name="mintcream">#FFF5FFFA</color>
+    <color name="whiteandroid">#ececec</color>
+
+</resources>

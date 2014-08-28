@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">E闻</string>
+    <!-- TabNewsActivity -->
+    <string name="title_news_category_tops">头条</string>
+    <string name="title_news_category_sport">体育</string>
+    <string name="title_news_category_play">娱乐</string>
+    <string name="title_news_category_finance">企业</string>
+    <string name="title_news_category_science">科技</string>
+    <string name="title_news_category_more">更多</string>
+    <string name="exit_dialog">确定出E闻吗？</string>
+    <string name="exit_dialog_determine">退出</string>
+    <string name="exit_dialog_cancle">取消</string>
+    <string name="news_top_left_text">"   E闻"</string>
+    <string name="topic_top_left_text">新浪</string>
+    <string name="picture_top_left_text">腾讯</string>
+    <string name="follow_top_left_text">E闻</string>
+    <string name="vote_top_left_text">百度</string>
+    <string name="login_title">登录E闻</string>
+    <string name="login_number">账号</string>
+    <string name="login_password">密码</string>
+    <string name="et_number_hint">请输入通行证账号</string>
+    <string name="et_password_hint">请输入通行证密码</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_register">注册</string>
+    <string name="safety_login">SSL安全登录</string>
+    <string name="register_title">注册E闻通行证</string>
+    <string name="tv_register">如果已经注册"E闻"或其他产品,请返回登录</string>
+    <string name="tv_number">手机号码:</string>
+    <string name="et_number_password_hint">6-16个字符，区分大小写</string>
+    <string name="tv_address">所在地址：</string>
+    <string name="tv_password">设置密码：</string>
+    <string name="tv_countersign_password">确认密码：</string>
+    <string name="et_countersign_password">请再一次输入密码</string>
+    <string name="cb_agree">我同意"服务条款"和"网络游戏用户隐私权保护和个人信息利用政策"</string>
+    <string name="btn_immediately_register">立即注册</string>
+    <string name="android_url">/data/data/com.zm.netease/files/</string>
+    <string name="tv_news_detail_source">来源：</string>
+    <string name="tv_topic">相关跟帖</string>
+    <string name="tv_witer">写跟帖</string>
+    <string name="tv_share">分享</string>
+    <string name="tv_collect">收藏</string>
+    <string name="tv_Aa">字体大小</string>
+    <string name="tv_save">保存</string>
+    <string name="et_witer_comments_hint">写跟帖</string>
+    <string name="tv_download">下载</string>
+    <string name="et_phone_number">请输入您的手机号码</string>
+
+</resources>
